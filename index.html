@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Website #4</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300,400;500&family=Playfair+Display:wght@600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+        />
+        <link rel="stylesheet" href="main.css" />
+    </head>
+    <body>
+        <!--==========| Header Section |==========-->
+        <header>
+            <!----------| Navbar |---------->
+            <nav>
+                <h3 class="logo">Logo</h3>
+                <ul class="nav__links">
+                    <i class="fas fa-times close-nav"></i>
+                    <li class="link__container">
+                        <a href="#!" class="nav__link emphasized">About</a>
+                    </li>
+                    <li class="link__container">
+                        <a href="#!" class="nav__link emphasized">Articles</a>
+                    </li>
+                    <li class="link__container">
+                        <a href="#!" class="nav__link active emphasized"
+                            >Subscribe</a
+                        >
+                    </li>
+                </ul>
+                <i class="fas fa-bars open-nav"></i>
+            </nav>
+
+            <!----------| Contents |---------->
+            <div class="header__contents">
+                <h1 class="header__title">Lights</h1>
+                <h3
+                    class="
+                        sub-title
+                        header__sub__title
+                        line-bottom line-left
+                        emphasized
+                    "
+                >
+                    A human exploration
+                </h3>
+            </div>
+
+            <!----------| Banner |---------->
+            <div class="banner">
+                <h2 class="section-header banner__title">Slow travelling</h2>
+                <p class="line-bottom line-left emphasized">A travel blog</p>
+                <p class="banner__text">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                    Temporibus iusto nostrum ullam velit perferendis provident
+                    fuga laudantium architecto nam minus dolorem perspiciatis
+                    hic, exercitationem ut fugiat vitae quasi in saepe tenetur,
+                    delectus fugit. Tenetur facere ducimus eveniet esse
+                    veritatis temporibus iusto nostrum ullam velit perferendis
+                    provident fuga laudantium architecto nam minus dolorem hic,
+                    exercitationem ut fugiat.
+                </p>
+            </div>
+        </header>
+
+        <!--==========| Articles Section |==========-->
+        <section class="article">
+            <h2 class="section-header article__title">Latest articles</h2>
+            <p class="line-bottom emphasized">Our most recent posts</p>
+
+            <!----------| Card Wrapper |---------->
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card__overlay"></div>
+                    <img
+                        class="card__bg"
+                        src="images/card_img1.jpg"
+                        alt="Image #1"
+                    />
+                    <div class="card__body">
+                        <h3 class="card__title emphasized">Card #1</h3>
+                        <h4
+                            class="
+                                sub-title
+                                card__sub-title
+                                line-bottom
+                                emphasized
+                            "
+                        >
+                            Neon Restaurants
+                        </h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__overlay"></div>
+                    <img
+                        class="card__bg"
+                        src="images/card_img2.jpg"
+                        alt="Image #2"
+                    />
+                    <div class="card__body">
+                        <h3 class="card__title emphasized">Card #2</h3>
+                        <h4
+                            class="
+                                sub-title
+                                card__sub-title
+                                line-bottom
+                                emphasized
+                            "
+                        >
+                            Beautiful Cities
+                        </h4>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card__overlay"></div>
+                    <img
+                        class="card__bg"
+                        src="images/card_img3.jpg"
+                        alt="Image #3"
+                    />
+                    <div class="card__body">
+                        <h3 class="card__title emphasized">Card #3</h3>
+                        <h4
+                            class="
+                                sub-title
+                                card__sub-title
+                                line-bottom
+                                emphasized
+                            "
+                        >
+                            Night Lights
+                        </h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--==========| Subscribe Section |==========-->
+        <section class="subscribe">
+            <h2 class="section-header subscribe__title">Subscribe</h2>
+            <p class="line-bottom emphasized">Sign up to our newsletter</p>
+            <form class="subscribe__form">
+                <input
+                    class="subscribe__input"
+                    type="email"
+                    placeholder="Your email"
+                    required
+                />
+                <input
+                    class="subscribe__btn emphasized"
+                    type="submit"
+                    value="Submit"
+                />
+            </form>
+        </section>
+
+        <!--==========| Footer Section |==========-->
+        <footer>
+            <h3 class="logo">Logo</h3>
+            <ul class="footer__links">
+                <li class="link__container">
+                    <a href="#!" class="footer__link emphasized">About</a>
+                </li>
+                <li class="link__container">
+                    <a href="#!" class="footer__link emphasized">Articles</a>
+                </li>
+                <li class="link__container">
+                    <a href="#!" class="footer__link emphasized">Subscribe</a>
+                </li>
+            </ul>
+        </footer>
+
+        <!--==========| Footer Section |==========-->
+        <script>
+            const toggleNav = () => {
+                document.querySelector(".nav__links").classList.toggle("show");
+            };
+
+            document.querySelector(".close-nav").onclick = toggleNav;
+            document.querySelector(".open-nav").onclick = toggleNav;
+        </script>
+    </body>
+</html>
